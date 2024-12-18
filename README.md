@@ -1,4 +1,4 @@
-content = """
+
 # Two Layer Community Walk (TLWalk)
 
 **TLWalk** is a community-aware graph embedding method integrated into the [Karate Club library](https://github.com/benedekrozemberczki/karateclub). TLWalk enhances node representations by explicitly considering **intra-community** and **inter-community** relationships using a two-layer hierarchical random walk strategy.
