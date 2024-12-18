@@ -157,12 +157,5 @@ This project is released under the **MIT License**.
 
 ## Contact
 
-For questions or contributions, please open an issue or contact **He Yu** at [yuhe001@stu.xidian.edu.cn](mailto:yuhe001@stu.xidian.edu.cn).
+For questions or contributions, please open an issue or contact **He Yu** at [yuhehome@gmail.com](mailto:yuhehome@gmail.com).
 
----
-"""
-
-with open("/mnt/data/README.md", "w") as file:
-    file.write(content)
-
-"/mnt/data/README.md 文件已生成。"
