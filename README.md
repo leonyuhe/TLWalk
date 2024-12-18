@@ -55,7 +55,7 @@ Supported datasets are stored in the `input/` directory.
 Preprocess your graph data to ensure compatibility:
 
 ```bash
-python preprocess.py --input input/your_dataset.edges --output output/processed_data
+python preprocess.py 
 ```
 
 ---
@@ -65,7 +65,7 @@ python preprocess.py --input input/your_dataset.edges --output output/processed_
 Run TLWalk to generate graph embeddings:
 
 ```bash
-python _TwoLayerCommunityWalk.py --input output/processed_data --embedding_dim 128 --walk_length 10 --num_walks 80 --output output/embeddings.emb
+python _TwoLayerCommunityWalk.py
 ```
 
 ---
@@ -75,7 +75,7 @@ python _TwoLayerCommunityWalk.py --input output/processed_data --embedding_dim 1
 Evaluate TLWalk embeddings for link prediction:
 
 ```bash
-python link_prediction.py --embedding output/embeddings.emb --train_ratio 0.8 --output results/link_prediction_results.txt
+python link_prediction.py 
 ```
 
 ---
@@ -85,7 +85,7 @@ python link_prediction.py --embedding output/embeddings.emb --train_ratio 0.8 --
 Evaluate node classification performance:
 
 ```bash
-python node_classification_c.py --embedding output/embeddings.emb --train_ratio 0.8 --output results/classification_results.txt
+python node_classification_c.py 
 ```
 
 ---
