@@ -7,7 +7,7 @@ from torch_geometric.datasets import WebKB, PolBlogs
 from torch_geometric.utils import to_networkx
 from karateclub import (
     DeepWalk, Node2Vec, Role2Vec, Comm2Vec,
-    Walklets, TwoLayerCommunityWalk, MNMF,CommunityRoleWalk
+    Walklets, TwoLayerCommunityWalk, MNMF
 )
 
 # Load WebKB dataset
@@ -25,13 +25,12 @@ y = data.y.numpy()
 
 # Define embedding methods
 methods = {
-    # "DeepWalk": DeepWalk(),
-    # "Node2Vec": Node2Vec(),
+     "DeepWalk": DeepWalk(),
+     "Node2Vec": Node2Vec(),
      "Role2Vec": Role2Vec(),
     "TwoLayerCommunityWalk": TwoLayerCommunityWalk(),
     "MNMF": MNMF(),
-    "CommunityRoleWalk": CommunityRoleWalk(),
-    # "Walklets": Walklets(),
+    "Walklets": Walklets(),
 }
 
 # Evaluate each method
