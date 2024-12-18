@@ -8,8 +8,7 @@ from karateclub import (
     DeepWalk, Node2Vec, Role2Vec, Comm2Vec,
     Walklets, GraphWave, FeatherNode,
     FirstOrderLINE, TENE, GLEE,
-    Diff2Vec, NetMF, RoleComm2Vec,GraphRole2Vec,CommunityAwareDeepWalk
-    ,TwoLayerCommunityWalk,MNMF,CommunityRoleWalk,EPSBE,CommunityEPSBE,EnhancedEPSBE
+    Diff2Vec, NetMF,TwoLayerCommunityWalk
 )
 import random
 
@@ -75,26 +74,13 @@ def get_embedding_methods():
     定义所有需要测试的嵌入方法。
     """
     return {
-        #"DeepWalk": DeepWalk(),
-        #"EPSBE": EPSBE(2,1,3),
-        #"EnhancedEPSBE": EnhancedEPSBE(2,1,3),
-        #"CommunityEPSBE": CommunityEPSBE(eps_0=2, delta=1.0, max_eps=3.0),
-        #"CommunityAwareDeepWalk": CommunityAwareDeepWalk(),
-        #"TwoLayerCommunityWalk": TwoLayerCommunityWalk(),
-        "CommunityRoleWalk": CommunityRoleWalk(),
-        #"MNMF": MNMF(),
-        # "Role2Vec": Role2Vec(),
-        # "Comm2Vec": Comm2Vec(),
-        # "Walklets": Walklets(),
-        # "RoleComm2Vec": RoleComm2Vec(),
-        # "GraphRole2vec": GraphRole2Vec(),
-        # "GraphWave": GraphWave(),
-        #"FeatherNode": FeatherNode(),
-        #"FirstOrderLINE": FirstOrderLINE(),
-        #"TENE": TENE(),
-        #"GLEE": GLEE(),
-        #"Diff2Vec": Diff2Vec(),
-        # "NetMF": NetMF()
+        "DeepWalk": DeepWalk(),
+        "TwoLayerCommunityWalk": TwoLayerCommunityWalk(),
+        "MNMF": MNMF(),
+        "Role2Vec": Role2Vec(),
+        "Walklets": Walklets(),
+        "GraphWave": GraphWave(),
+        "NetMF": NetMF()
     }
 
 
