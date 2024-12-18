@@ -139,11 +139,14 @@ TLWalk/
 If you use **TLWalk** in your research, please cite our work:
 
 ```bibtex
-@article{yourarticle2024,
-  title={Two Layer Walk: A Community-Aware Graph Embedding},
-  author={He Yu and Jing Liu},
-  journal={arXiv preprint arXiv:XXXX.XXXXX},
-  year={2024}
+@misc{yu2024layerwalkcommunityawaregraph,
+      title={Two Layer Walk: A Community-Aware Graph Embedding}, 
+      author={He Yu and Jing Liu},
+      year={2024},
+      eprint={2412.12933},
+      archivePrefix={arXiv},
+      primaryClass={cs.SI},
+      url={https://arxiv.org/abs/2412.12933}, 
 }
 ```
 
