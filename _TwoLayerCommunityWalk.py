@@ -6,7 +6,7 @@ from community import community_louvain
 from networkx.algorithms.community import modularity
 
 class TwoLayerCommunityWalk:
-    def __init__(self, walk_length=80, walk_number=15, dimensions=128, window_size=5, epochs=2, workers=4, seed=42, beta = 0.8):
+    def __init__(self, walk_length=80, walk_number=15, dimensions=128, window_size=5, epochs=2, workers=4, seed=42, beta = 1):
         self.walk_length = walk_length
         self.walk_number = walk_number
         self.dimensions = dimensions
