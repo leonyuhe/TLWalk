@@ -60,17 +60,7 @@ python preprocess.py
 
 ---
 
-### 2. Run TLWalk for Embedding
-
-Run TLWalk to generate graph embeddings:
-
-```bash
-python _TwoLayerCommunityWalk.py
-```
-
----
-
-### 3. Link Prediction Task
+### 2. Link Prediction Task
 
 Evaluate TLWalk embeddings for link prediction:
 
@@ -80,7 +70,7 @@ python link_prediction.py
 
 ---
 
-### 4. Node Classification Task
+### 3. Node Classification Task
 
 Evaluate node classification performance:
 
